@@ -1,0 +1,15 @@
+//
+//  ViewController.h
+//  runtime-dictToModel
+//
+//  Created by sunke on 2018/9/28.
+//  Copyright © 2018年 SK. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController
+
+
+@end
+
