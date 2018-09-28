@@ -13,6 +13,11 @@
 		E11B7DB5215E09EE00766E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11B7DB4215E09EE00766E0D /* Assets.xcassets */; };
 		E11B7DB8215E09EE00766E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11B7DB6215E09EE00766E0D /* LaunchScreen.storyboard */; };
 		E11B7DBB215E09EE00766E0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B7DBA215E09EE00766E0D /* main.m */; };
+		E11B7DC4215E0A5100766E0D /* NSObject+EnumDict.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B7DC2215E0A5100766E0D /* NSObject+EnumDict.m */; };
+		E11B7DC7215E0A5B00766E0D /* ShopItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = E11B7DC6215E0A5B00766E0D /* ShopItem.plist */; };
+		E11B7DCF215E0A6A00766E0D /* ListItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B7DCA215E0A6A00766E0D /* ListItemModel.m */; };
+		E11B7DD0215E0A6A00766E0D /* ShopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B7DCB215E0A6A00766E0D /* ShopItem.m */; };
+		E11B7DD1215E0A6A00766E0D /* AttrModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B7DCC215E0A6A00766E0D /* AttrModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		E11B7DB7215E09EE00766E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E11B7DB9215E09EE00766E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E11B7DBA215E09EE00766E0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E11B7DC2215E0A5100766E0D /* NSObject+EnumDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EnumDict.m"; sourceTree = "<group>"; };
+		E11B7DC3215E0A5100766E0D /* NSObject+EnumDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EnumDict.h"; sourceTree = "<group>"; };
+		E11B7DC6215E0A5B00766E0D /* ShopItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopItem.plist; sourceTree = "<group>"; };
+		E11B7DC9215E0A6A00766E0D /* AttrModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttrModel.h; sourceTree = "<group>"; };
+		E11B7DCA215E0A6A00766E0D /* ListItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItemModel.m; sourceTree = "<group>"; };
+		E11B7DCB215E0A6A00766E0D /* ShopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopItem.m; sourceTree = "<group>"; };
+		E11B7DCC215E0A6A00766E0D /* AttrModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttrModel.m; sourceTree = "<group>"; };
+		E11B7DCD215E0A6A00766E0D /* ListItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemModel.h; sourceTree = "<group>"; };
+		E11B7DCE215E0A6A00766E0D /* ShopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,9 @@
 		E11B7DAA215E09EB00766E0D /* runtime-dictToModel */ = {
 			isa = PBXGroup;
 			children = (
+				E11B7DC5215E0A5B00766E0D /* Plist */,
+				E11B7DC1215E0A5100766E0D /* Category */,
+				E11B7DC8215E0A6A00766E0D /* Model */,
 				E11B7DAB215E09EB00766E0D /* AppDelegate.h */,
 				E11B7DAC215E09EB00766E0D /* AppDelegate.m */,
 				E11B7DAE215E09EB00766E0D /* ViewController.h */,
@@ -69,6 +86,36 @@
 				E11B7DBA215E09EE00766E0D /* main.m */,
 			);
 			path = "runtime-dictToModel";
+			sourceTree = "<group>";
+		};
+		E11B7DC1215E0A5100766E0D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E11B7DC2215E0A5100766E0D /* NSObject+EnumDict.m */,
+				E11B7DC3215E0A5100766E0D /* NSObject+EnumDict.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E11B7DC5215E0A5B00766E0D /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				E11B7DC6215E0A5B00766E0D /* ShopItem.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		E11B7DC8215E0A6A00766E0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E11B7DC9215E0A6A00766E0D /* AttrModel.h */,
+				E11B7DCA215E0A6A00766E0D /* ListItemModel.m */,
+				E11B7DCB215E0A6A00766E0D /* ShopItem.m */,
+				E11B7DCC215E0A6A00766E0D /* AttrModel.m */,
+				E11B7DCD215E0A6A00766E0D /* ListItemModel.h */,
+				E11B7DCE215E0A6A00766E0D /* ShopItem.h */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E11B7DB8215E09EE00766E0D /* LaunchScreen.storyboard in Resources */,
+				E11B7DC7215E0A5B00766E0D /* ShopItem.plist in Resources */,
 				E11B7DB5215E09EE00766E0D /* Assets.xcassets in Resources */,
 				E11B7DB3215E09EB00766E0D /* Main.storyboard in Resources */,
 			);
@@ -141,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11B7DD0215E0A6A00766E0D /* ShopItem.m in Sources */,
 				E11B7DB0215E09EB00766E0D /* ViewController.m in Sources */,
 				E11B7DBB215E09EE00766E0D /* main.m in Sources */,
+				E11B7DCF215E0A6A00766E0D /* ListItemModel.m in Sources */,
+				E11B7DD1215E0A6A00766E0D /* AttrModel.m in Sources */,
+				E11B7DC4215E0A5100766E0D /* NSObject+EnumDict.m in Sources */,
 				E11B7DAD215E09EB00766E0D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F8E7JE29H;
 				INFOPLIST_FILE = "runtime-dictToModel/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F8E7JE29H;
 				INFOPLIST_FILE = "runtime-dictToModel/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

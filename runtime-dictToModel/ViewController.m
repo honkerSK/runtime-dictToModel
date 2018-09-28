@@ -2,21 +2,45 @@
 //  ViewController.m
 //  runtime-dictToModel
 //
-//  Created by sunke on 2018/9/28.
-//  Copyright © 2018年 SK. All rights reserved.
+//  Created by sunke on 2017/9/21.
+//  Copyright © 2017年 SK. All rights reserved.
 //
 
 #import "ViewController.h"
 
+#import "ShopItem.h"
+#import "AttrModel.h"
+
 @interface ViewController ()
+
+@property (nonatomic, strong) NSMutableArray *modelArr;
 
 @end
 
 @implementation ViewController
 
+- (NSMutableArray *)modelArr {
+    if (_modelArr == nil) {
+        _modelArr = [NSMutableArray array];
+    }
+    return _modelArr;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    //plist 解析
+    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"ShopItem.plist" ofType:nil];
+    NSArray *dictArr = [NSArray arrayWithContentsOfFile:filePath];
+    
+    //遍历数据
+    [dictArr enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL * _Nonnull stop) {
+        ShopItem *shopItem = [ShopItem sk_modelWithDict:dict];
+        //保存模型到数组中
+        [self.modelArr addObject:shopItem];
+    }];
+    
+    NSLog(@"%@", _modelArr);
+
 }
 
 
