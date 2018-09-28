@@ -11,29 +11,29 @@ runtime 字典转模型
 + 创建模型原则: 从外层到内存, 一个类型字典对应一个模型
 + 示例程序中, 根据plist, 创建了三个类: ShopItem , AttrModel , ListItemModel 
 
-<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic1.png" width="500px" alt="runtime1"></img>
+<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic1.png" width="600px" alt="runtime1"></img>
 
 + 注意: 定义的属性名和字典中的键名字一致.
 
 ### 2.在分类中导入最外层模型
 
 
-<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic2.png" width="500px" alt="runtime2"></img>
+<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic2.png" width="600px" alt="runtime2"></img>
 
 
 ### 3.最外层类中导入 NSObject+EnumDict 分类
 
-<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic3.png" width="500px" alt="runtime3"></img>
+<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic3.png" width="600px" alt="runtime3"></img>
 
 
 ### 4.遵守分类协议 ModelDelegate, 实现协议方法
 
-<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic4.png" width="500px" alt="runtime4"></img>
+<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic4.png" width="600px" alt="runtime4"></img>
 
 
 ### 5.控制器中, 导入最外层模型 ShopItem.h , 解析数据遍历数组, 并字典转模型
 
-<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic5.png" width="500px" alt="runtime5"></img>
+<img src="https://github.com/honkerSK/runtime-dictToModel/blob/master/runtime-pic5.png" width="600px" alt="runtime5"></img>
 
 
 
