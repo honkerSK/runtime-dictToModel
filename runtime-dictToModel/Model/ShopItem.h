@@ -11,9 +11,6 @@
 //2.导入分类
 #import "NSObject+EnumDict.h"
 
-// 原则: 从外层到内存, 一个字典对应一个模型
-//第一层  代表每个item字典
-
 @class AttrModel;
 //4.遵守分类协议, 实现协议方法
 @interface ShopItem : NSObject <ModelDelegate>

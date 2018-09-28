@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 #import "ShopItem.h"
-#import "AttrModel.h"
 
 @interface ViewController ()
 
@@ -34,13 +33,13 @@
     
     //遍历数据
     [dictArr enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL * _Nonnull stop) {
+        //字典转模型
         ShopItem *shopItem = [ShopItem sk_modelWithDict:dict];
         //保存模型到数组中
         [self.modelArr addObject:shopItem];
     }];
     
     NSLog(@"%@", _modelArr);
-
 }
 
 
